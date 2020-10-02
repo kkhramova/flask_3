@@ -6,7 +6,7 @@ class Request:
     rates = requests.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
     def get_resp(self):
         try:
-            return print(requests.get(self.rates))
+            return print(self.rates)
         except:
             raise Exception
 
